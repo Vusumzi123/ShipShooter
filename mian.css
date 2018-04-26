@@ -1,0 +1,72 @@
+body{
+    background-image: url("magellanic-clouds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-flex !important;
+    display: flex !important;
+    justify-content: center;
+    -webkit-justify-content : center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+canvas{
+    border: 1px solid white;
+}
+
+.stats{
+    position: absolute;
+    top:50px;
+    left: 50px;
+    width: 200px;
+    color: white;
+}
+
+.stats .row {
+    color: white;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: lightseagreen; /* Green background */
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: lightseagreen; /* Green background */
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+}
